@@ -57,6 +57,8 @@ header.top .btn.primary{background:var(--brand-fg);color:var(--brand);border-col
 .eyebrow{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600}
 .head-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
 .who{font-size:.85rem;color:var(--muted);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+/* écran large : bandeau sur une seule ligne, bouton à droite */
+@media (min-width:1100px){header.top{flex-wrap:nowrap}header.top .brand{flex-wrap:nowrap}header.top .brand>div{white-space:nowrap}.head-actions{flex-wrap:nowrap}header.top .who{flex-direction:column;align-items:flex-end;gap:2px;text-align:right}header.top .btn{white-space:nowrap}}
 .who b{color:var(--fg);font-weight:600;overflow-wrap:anywhere}
 .linkbtn{background:none;border:0;padding:0;color:var(--accent);font-weight:600;text-decoration:underline;text-underline-offset:2px}
 .btn{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:8px 14px;font-weight:500}
